@@ -5,16 +5,16 @@ questions to be answered. Other users can vote on asked questions and they bubbl
 
 --Required features--
 
-*Admin can create meetups.
-*users can create an account an account and login.
-*Users can post questions to a specific meetup.
-*users can upvote or downvote a question.
-*questions are sorted based on the number of upvotes a question has, which helps the meetup organizer(s) to priotize questions most users are interested in.
-*Users can post comments to a specific question.
+1.Admin can create meetups.1
+1.users can create an account an account and login.2
+1.Users can post questions to a specific meetup.3
+1.users can upvote or downvote a question.4
+1.questions are sorted based on the number of upvotes a question has, which helps the meetup organizer(s) to priotize questions most users are interested in.5
+1.Users can post comments to a specific question.6
 
 
 ###optional features###
 
-*Admin can add images to meetup record.
-*Admin can add tags tomeetup record.
-*user can reset password.
+1.Admin can add images to meetup record.1
+1.Admin can add tags tomeetup record.2
+1.user can reset password.3
