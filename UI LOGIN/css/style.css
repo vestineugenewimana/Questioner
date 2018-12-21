@@ -1,0 +1,48 @@
+body {font-family: Arial, Helvetica, sans-serif;
+padding-top: 20px;
+shape-margin: 15px;
+background-color:#f1f1f1;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+.container input[type="email"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.container input[type="password"]{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container button[type="submit"]{
+    padding:18px 50px;
+    margin:8px 0;
+    background-color: navy;
+    }
+    
+    .cancelbtn {
+        padding: 18px 50px;
+        margin:8px 0;
+        background-color: red;
+      }
+      
+    #resetpassword{
+    float:right;
+    margin-top: 50px;
+}
+@media screen and (max-width:800px) {
+    .left , .main, .right {width:100%;}
+  }
+    
