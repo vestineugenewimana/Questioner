@@ -1,4 +1,4 @@
-# Questioner
+# Questioner [![Build Status](https://travis-ci.com/vestineugenewimana/Questioner.svg?branch=MeetupAPI)](https://travis-ci.com/vestineugenewimana/Questioner)
 
 Questioner is Crowd-source questions for a meetup that helps the meetup organizer prioritize
 questions to be answered. Other users can vote on asked questions and they bubble to the top or bottom of the log.
