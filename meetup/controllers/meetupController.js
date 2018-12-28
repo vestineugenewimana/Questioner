@@ -11,11 +11,14 @@ class meetupController {
 
   static createMeetup(req, res) {
     const newId = parseInt(Meetup.length) + 1;
-    const { title, body } = req.body;
+    const { title, location, topic, tags } = req.body;
     const newMeetup = {
       id: newId,
       title,
-      body,
+      location,
+      topic,
+      tags,
+      happeningOn: new Date(),
       created_at: moment.utc().format()
     };
     Meetup.push(newMeetup);
