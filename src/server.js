@@ -1,5 +1,6 @@
-import express from "express";
-import router from "../routes/routes";
+/* eslint-disable linebreak-style */
+import express from 'express';
+import router from '../routes/routes';
 
 const app = express();
 app.use(express.json());
