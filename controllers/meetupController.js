@@ -62,7 +62,7 @@ class meetupController {
       return meetup.id == id;
     });
     if (findMeetup) {
-      const newMeetups = Meetup.filter(meetup => {
+      const newMeetups = Meetup.filter(Meetup => {
         return Meetup !== findMeetup;
       });
       res.status(200).json({
@@ -74,7 +74,6 @@ class meetupController {
         error: "could not delete a meetup"
       });
     }
-  }
-}
-
+  
 export default meetupController;
+  
