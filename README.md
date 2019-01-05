@@ -2,6 +2,7 @@
 Questioner is Crowd-source questions for a meetup that helps the meetup organizer prioritize
 questions to be answered. Other users can vote on asked questions and they bubble to the top or bottom of the log.
 
+### Deployed on Heroku: https://vesquestioner.herokuapp.com/
 
 # Questioner API standards
 
