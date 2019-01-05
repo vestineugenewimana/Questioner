@@ -2,6 +2,54 @@
 Questioner is Crowd-source questions for a meetup that helps the meetup organizer prioritize
 questions to be answered. Other users can vote on asked questions and they bubble to the top or bottom of the log.
 
+
+#Questioner API standards
+
+- [Setup Instructions](#instructions)
+- [RESTful URLs](#restful-urls)
+
+## Setup instructiions
+
+Install dependencies:
+
+```sh
+$ npm install
+```
+
+Startup the Server:
+
+```sh
+$ npm start
+```
+
+Run Tests:
+
+```sh
+$ npm run test
+```
+
+## RESTful URLS
+
+| Method | Endpoint | Description
+| --- | --- | -- |
+| GET | /api/v1/meetups | List all meetups |
+| GET | /api/v1/meetups/:meetupId | Query specific meetup |
+| POST | /api/v1/meetups | Create a meetup |
+| PUT | /api/v1/meetups/:meetupId | update meetup |
+| DELETE | /api/v1/meetups/:meetupId | Delete a meetup |
+| GET | /api/v1/users | List all users |
+| POST | /api/v1/users | add a new user |
+| GET | /api/v1/users/:userId | Query specfic user|
+| PUT | /api/v1/users/:userId | Update user |
+| DELETE | /api/v1/users/:userId | Delete user|
+| GET | /api/v1/questions | List all questions |
+| GET | /api/v1/questions/:questionId | Query specific question |
+| POST | /api/v1/questions | create a question |
+| PUT | /api/v1/questions/:questionId | update upvote or downvote |
+| DELETE | /api/v1/questions/:questionId | delete a question |
+
+
+
 ## Required features
 
 * Admin can create meetups.
