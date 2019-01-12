@@ -1,5 +1,6 @@
 import db from "../database";
 
+//db migrations code refactored from https://github.com/helpybruce/CRUD_blog_postgress_ES6_API
 const meetupTable = `
 DROP TABLE IF EXISTS meetups CASCADE;
 CREATE TABLE IF NOT EXISTS meetups(
