@@ -49,6 +49,18 @@ body {font-family: Arial, Helvetica, sans-serif;
     float: left;
     width: 50%
   }
+ #haveanccount {
+    float:right;
+    margin-top: 50px;
+    font-size: 35px;
+    padding-bottom: 50px;
+    padding-right: 450px;
+    
+    }
+  #haveanccount span a {
+    color: blue;
+  }
+  
   @media screen and (max-width:800px) {
     .left , .main, .right {width:100%;}
   }
