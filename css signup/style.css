@@ -3,6 +3,12 @@ body {font-family: Arial, Helvetica, sans-serif;
     shape-margin: 12px;
     background-color:#f1f1f1;
     }
+.container{
+      width:80%;
+      margin:auto;
+      overflow: hidden;
+      text-decoration: none;
+  }
 .container input[type=Email], input[type=password] ,input[type=Username],input[type="Location"]{
     width: 100%;
     padding: 12px 20px;
@@ -10,7 +16,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     border: 1px solid;
     box-sizing: border-box;
-    background: #f1f1f1;
+    background: white;
   }
   
   .container input[type=Email]:focus, input[type=password]:focus {
@@ -25,7 +31,7 @@ body {font-family: Arial, Helvetica, sans-serif;
   button {
     background-color: navy;
     color: white;
-    padding: 14px 20px;
+    padding: 18px 50px;
     margin: 8px 0;
     border: none;
     font-size:25px;
@@ -42,7 +48,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     opacity:1;
   }
   .cancelbtn {
-    padding: 14px 20px;
+    padding: 18px 50px;
     background-color: red;
   }
   .cancelbtn, .signupbtn {
