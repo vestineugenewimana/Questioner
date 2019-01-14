@@ -48,7 +48,7 @@ class meetupController {
     const { id } = req.params;
     const meetup = Meetup.find(updateMeetup => updateMeetup.id == id);
     if (meetup) {
-      (meetup.title = req.body.title), (meetup.body = req.body.body);
+      (meetup.title = req.body.title), (meetup.body = req.body.title);
       return res.status(200).json({
         message: 'successfully updated',
         updateMeetup: meetup,
