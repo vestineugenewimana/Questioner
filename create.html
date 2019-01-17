@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Meetup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="create.css"/>
+    
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Create Meetup</h1>
+<div class="container">
+        <form action="">
+      
+          <label for="title">Meetup title</label>
+          <input type="text" id="title" placeholder="Enter Meetup title">
+      
+          <label for="date">Meetup date</label>
+          <input type="text" id="date" placeholder="Enter meetup  date">
+      
+          <label for="location">Meetup Location</label>
+          <select id="location" name="location">
+            <option value="Kigali">Kigali</option>
+            <option value="South">Southern province</option>
+            <option value="North">Northern province</option>
+            <option value="South">West province</option>
+            <option value="North">east province</option>
+          </select>
+      
+          <label for="subject">Description</label>
+          <textarea id="subject" name="subject" placeholder="Meetup description" style="height:200px"></textarea>
+      <br />
+      <br />
+
+      <form action="" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="image" value="Upload Image" name="submit">
+        <br />
+        <br />
+    </form>
+    <div class="row">
+        
+      <input type="submit" value="Create Meetup" >
+      </div>
+           </body>
+</html>
