@@ -60,7 +60,7 @@ $ npm run test
 ## Resources/Tutorials That helped me to setting up APIs are the following:
 * https://medium.com/@purposenigeria/build-a-restful-api-with-node-js-and-express-js-d7e59c7a3dfb
 * https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9
-* https://github.com/helpybruce/CRUD_blog_postgress_ES6_API/tree/master/server
+* https://medium.com/@knowbeeinc/building-es6-crud-api-with-nodejs-expressjs-7ddcde21288
 * https://codeburst.io/how-to-test-javascript-with-mocha-the-basics-80132324752e
 * https://gist.github.com/soheilhy/867f76feea7cab4f8a84
 * https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai
