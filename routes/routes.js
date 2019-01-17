@@ -21,7 +21,7 @@ router.delete('/api/v1/meetups/:id', meetupController.deleteMeetup);
 router.get('/api/v1/questions', questioncontroller.getquestion);
 router.post('/api/v1/questions', questioncontroller.createQuestion);
 router.get('/api/v1/questions/:id', questioncontroller.getOnequestion);
-router.put('/api/v1/questions/:id', questioncontroller.updateQuestion);
+router.patch('/api/v1/questions/:id', questioncontroller.updateQuestion);
 router.delete('/api/v1/questions/:id', questioncontroller.deleteQuestion);
 
 
