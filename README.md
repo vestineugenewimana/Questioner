@@ -56,3 +56,16 @@ $ npm run test
 * Admin can create meetups.
 * users can create an account an account and login.
 * Users can post questions to a specific meetup
+
+## Resources/Tutorials That helped me to setting up APIs are the following:
+* https://medium.com/@purposenigeria/build-a-restful-api-with-node-js-and-express-js-d7e59c7a3dfb
+* https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9
+* https://github.com/helpybruce/CRUD_blog_postgress_ES6_API/tree/master/server
+* https://codeburst.io/how-to-test-javascript-with-mocha-the-basics-80132324752e
+* https://gist.github.com/soheilhy/867f76feea7cab4f8a84
+* https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai
+* https://scotch.io/tutorials/how-to-test-nodejs-apps-using-mocha-chai-and-sinonjs
+
+## Author
+
+* Vestine Ugenewimana
