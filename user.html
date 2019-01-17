@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/stlye.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.4.2/js/all.js"></script>
+    <title>Meetup</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="logo">MEETUP</h1>
+      <nav>
+        <div class="tog-nav bars">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        
+        <ul class="menu">
+          
+          <li><a class="nav-link" href="myprofile.html">My Profile</a></li>
+          <li><a class="nav-link" href="singin.html">signout</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <div class="wrapper">
+      
+      <section class="top">
+        <div class="hero">
+          <h1>Welcome</h1>
+          <h3>What do you want to know?</h3>
+          <p>Know more of it by posting a question</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <form action="">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Ask a question..."
+            ></textarea>
+
+            <input type="submit" />
+          </form>
+          <br />
+          <br />
+          <a href="create.html" class="button">Create Meetup</a> 
+          <br />
+          <br />
+          <div class="card">
+            <div class="card-header">
+              <h1><a href="question.html">Lets Meet at Klab to learn data structures</a></h1>
+            </div>
+            
+              <h2>Meetup 1</h2>
+
+            <div class="card-content"></div>
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/svg/20161217/avatar__181424.png"
+              alt="picture description"
+              width="100"
+            />
+            <div class="buttons">
+              <a href="" id="likes"
+                ><span>Yes</span></a
+              >
+            </div>
+
+            <div class="buttons">
+              <a href="" id="comment"><span>May be</span></a>
+            </div>
+
+            <div class="buttons">
+              <a href="" id="dislikes">
+                 <span>Not</span></a
+              >
+            </div>
+
+            <div class="buttons">
+              <a href="" id="delete"><i class="fas fa-trash"></i></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h1>
+                <a href="question.html"
+                  >lets meet at Klab to learn java script</a
+                >
+              </h1>
+            </div>
+            
+              <h2>Meetup 2</h2>
+
+            <div class="card-content"></div>
+            <img
+              class="avatar"
+              src="https://png.pngtree.com/svg/20161217/avatar__181424.png"
+              alt="picture description"
+              width="100"
+            />
+            <div class="buttons">
+                <a href="" id="likes"
+                  ><span>Yes</span></a
+                >
+              </div>
+  
+              <div class="buttons">
+                <a href="" id="comment"><span>May be</span></a>
+              </div>
+  
+              <div class="buttons">
+                <a href="" id="dislikes">
+                   <span>Not</span></a
+                >
+              </div>
+  
+           
+
+            <div class="buttons">
+              <a href="" id="delete"><i class="fas fa-trash"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent">
+          <div><h1>Up coming Meetup</h1></div>
+          <div class="questions">
+            <ul>
+              <li><a href="">Meetup at KLAB</a></li>
+
+              <li>
+                <a href=""
+                  >Meetup at University of Rwanda</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <script>
+      const hder = document.querySelector(".header");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const logo = document.querySelector(".logo");
+      const togNav = document.querySelector(".tog-nav");
+      const menu = document.querySelector(".menu");
+      const topBar = document.querySelector(".bar:nth-of-type(3)");
+      const midBar = document.querySelector(".bar:nth-of-type(2)");
+      const lowBar = document.querySelector(".bar:nth-of-type(1)");
+
+      function headShrink() {
+        let ypos = window.pageYOffset;
+        if (ypos > 1) {
+          hder.classList.add("shrink");
+          logo.classList.add("darken");
+          logo.style.top = "15px";
+          navLinks.forEach(link => link.classList.add("darken"));
+          togNav.style.top = "25px";
+          menu.style.top = "70px";
+        } else {
+          hder.classList.remove("shrink");
+          logo.classList.remove("darken");
+          logo.style.top = "30px";
+          menu.style.top = "100px";
+          navLinks.forEach(link => link.classList.remove("darken"));
+          togNav.style.top = "40px";
+        }
+      }
+
+      function toggleNav() {
+        menu.classList.toggle("open");
+        
+        topBar.classList.toggle("rotate");
+        midBar.classList.toggle("hide");
+        lowBar.classList.toggle("rotate");
+      }
+
+      window.addEventListener("scroll", headShrink);
+      togNav.addEventListener("click", toggleNav);
+    </script>
+  </body>
+</html>
