@@ -26,7 +26,7 @@ class meetupController {
     };
     Meetup.push(newMeetup);
     return res.status(200).json({
-      message: 'created a new meetup',
+      newMeetup
     });
   }
 
