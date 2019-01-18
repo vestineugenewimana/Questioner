@@ -6,13 +6,16 @@
   "scripts": {
     "test": "nyc --require babel-core/register mocha tests/*.js --timeout 15000 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "start": "nodemon --exec babel-node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js",
+    "migrate": "node --require babel-register migrations/index.js --exit"
   },
   "author": "sunny",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "moment": "^2.23.0"
+    "moment": "^2.23.0",
+    "pg": "^7.7.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

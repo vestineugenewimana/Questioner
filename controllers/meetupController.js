@@ -2,12 +2,23 @@
 import moment from 'moment';
 import Meetup from '../db/meetups';
 
-class meetupController {
+import db from "../database";
+
+class meetupController{
   static getMeetup(req, res) {
-    return res.json({
-      message: 'List of all meetup',
-      Meetup,
-    });
+    const queryMeetups = `SELECT * FROM meetups`;
+    db.query(queryMeetups)
+      .then(meetups => {
+        res.status(200).json({
+          message: "all meetups",
+          meetups
+        });
+      })
+      .catch(err => {
+        res.status(401).json({
+          message: err
+        });
+      });
   }
 
   static createMeetup(req, res) {
