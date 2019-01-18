@@ -45,7 +45,7 @@ $ npm run test
 | DELETE | /api/v1/users/:userId | Delete user|
 | GET | /api/v1/questions | List all questions |
 | GET | /api/v1/questions/:questionId | Query specific question |
-| POST | /api/v1/questions | create a question |
+| POST | /api/v1/questions/meetup/meetupId | create a question |
 | PUT | /api/v1/questions/:questionId | update upvote or downvote |
 | DELETE | /api/v1/questions/:questionId | delete a question |
 
